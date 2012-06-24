@@ -4,7 +4,7 @@ a jQuery plugin that will lazy load your gists.
 
 ## Your problem
 
-is, that gists are loaded with a script element inside a page. That can interrupt page loading, if the gist-server is too slow. So here you have a plugin, to load a gist e.g. before the </body> ends.
+is, that gists are loaded with a script element inside a page. That can interrupt page loading, if the gist-server is too slow. So here you have a plugin, to load a gist e.g. before the /body ends.
 
 ## The solution
 
