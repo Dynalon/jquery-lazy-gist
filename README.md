@@ -8,7 +8,7 @@ is, that gists are loaded with a script element inside a page. That can interrup
 
 ## The solution
 
-Like so many other gist-plugins, this will replace the document.write function to fetch the gist-html code and put at the correct position. It should not affect other javascript code.
+Like so many other gist-plugins, this will replace the document.write function to fetch the gist-html code and put it at the correct position. It should not affect other javascript code.
 
 ## How to
 
