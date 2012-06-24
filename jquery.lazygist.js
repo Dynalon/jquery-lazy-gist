@@ -116,8 +116,8 @@
 				var popped = lock_stack.pop();
 				
 				if(popped === undefined) {
-					// we are the last _write call
-					//document.write = originwrite;
+					// it is the last _write call
+					document.write = originwrite;
 				}
 			} else {
 				// this is a fallback for interoperability
