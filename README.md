@@ -46,7 +46,7 @@ Here we set the attribute name of the anchor-element. The content of the attribu
 ###file###
   - _String_
 
-Set the attribute name of the anchor-element for the filename. The content of the attribute will replace the {file} in the _url_template_.
+Set the attribute name of the anchor-element for the filename. The content of the attribute will replace the {file} in the _url_template_. Here you can specify which file of the gist (if there are two ore more) to show. This is a feature from the github api.
 
 ## License
 
