@@ -119,9 +119,10 @@
 					// it is the last _write call
 					document.write = originwrite;
 				}
+				
 			} else {
 				// this is a fallback for interoperability
-				originwrite.apply( this, [content] );
+				originwrite.apply( this, arguments );
 			}
 		}
 	};
