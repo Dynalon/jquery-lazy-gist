@@ -24,6 +24,10 @@ Let the plugin do the work:
 
 There are options, but they are not documented yet...
 
+## License
+
+Licensed under the MIT (see MIT.txt).
+
 ## PS
 
 Please provide feedback or create issues!
