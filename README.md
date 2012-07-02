@@ -31,22 +31,22 @@ Pass an object to the lazygist function to configure. These are the defaults:
     });
 
 ###url_template###
-_String_
-_{id}_ - to set the gist id...
-_{file}_ - (optional) to set a file name
+  - _String_
+  - _{id}_ to set the gist id...
+  - _{file}_ (optional) to set a file name
 
 Is used to set the gist github url to fetch. In that url the parameter {id} and {file} get replaced.
 If the {file} tag is ommited, github will set it anyway.
 
 ###id###
-_String_
+  - _String_
 
-Here we set the attribute name of the anchor-element. This String will replace the {id} in the _url_template_.
+Here we set the attribute name of the anchor-element. The content of the attribute will replace the {id} in the _url_template_.
 
 ###file###
-_String_
+  - _String_
 
-Set the attribute name of the anchor-element for the filename. This String will replace the {file} in the _url_template_.
+Set the attribute name of the anchor-element for the filename. The content of the attribute will replace the {file} in the _url_template_.
 
 ## License
 
