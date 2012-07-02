@@ -22,7 +22,31 @@ Let the plugin do the work:
 	
 ## Options
 
-There are options, but they are not documented yet...
+Pass an object to the lazygist function to configure. These are the defaults:
+
+    lazygist({
+        'url_template' : 'https://gist.github.com/{id}.js?file={file}',
+        'id' : 'data-id',
+        'file' : 'data-file'
+    });
+
+###url_template###
+_String_
+_{id}_ - to set the gist id...
+_{file}_ - (optional) to set a file name
+
+Is used to set the gist github url to fetch. In that url the parameter {id} and {file} get replaced.
+If the {file} tag is ommited, github will set it anyway.
+
+###id###
+_String_
+
+Here we set the attribute name of the anchor-element. This String will replace the {id} in the _url_template_.
+
+###file###
+_String_
+
+Set the attribute name of the anchor-element for the filename. This String will replace the {file} in the _url_template_.
 
 ## License
 
