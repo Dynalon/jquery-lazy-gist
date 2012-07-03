@@ -8,9 +8,7 @@
         "url": "http://tammopape.de"
     },
     "homepage": "https://github.com/tammo/jquery-lazy-gist",
-    "bugs": {
-        "url": "https://github.com/tammo/jquery-lazy-gist/issues"
-    },
+    "bugs": "https://github.com/tammo/jquery-lazy-gist/issues",
     "licenses": [
         "type": "MIT",
         "url": "http://www.opensource.org/licenses/mit-license.php"
