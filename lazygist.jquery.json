@@ -10,8 +10,10 @@
     "homepage": "https://github.com/tammo/jquery-lazy-gist",
     "bugs": "https://github.com/tammo/jquery-lazy-gist/issues",
     "licenses": [
-        "type": "MIT",
-        "url": "http://www.opensource.org/licenses/mit-license.php"
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
     ],
     "keywords": [
         "gists",
