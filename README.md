@@ -19,6 +19,16 @@ Create some elements to add the gists to, like
 Let the plugin do the work:
 
     $('.gist_here').lazygist();
+
+You can always use the load method (make sure you call 'init' before!):
+
+    $('.one_special_gist').lazygist('load');
+
+If you want to reset the document.write function. Call 'reset_write':
+
+    $().lazygist('reset_write');
+
+
 	
 ## Options
 
