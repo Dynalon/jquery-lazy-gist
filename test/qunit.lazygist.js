@@ -66,11 +66,6 @@ test("plugin method calling", function() {
         jQuery().lazygist("invalid");
         
     }, "must throw error if method is invalid");
-    
-    raises(function() {
-        jQuery().lazygist("_write");
-        
-    }, "must throw error on call to private _write function");
 });
 
 test("chainability", function() {
