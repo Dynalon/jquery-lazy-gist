@@ -55,7 +55,7 @@ test("wrong parameters", function() {
 });
 
 test("plugin method calling", function() {
-    expect(3);
+    expect(2);
     
     try {
         jQuery().lazygist("init");
