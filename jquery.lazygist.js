@@ -80,7 +80,7 @@
 			// (2) append the gist-html through the new document.write func (see _write)
             
             // (1)
-			return this.filter('[data-id]').each(function(){
+			return this.filter('[' + options.id + ']').each(function(){
 				
 				var id = $(this).attr(options.id),
                     file = $(this).attr(options.file),
