@@ -105,6 +105,20 @@ test("chainability", function() {
     markup.remove();
 });
 
+asyncTest("chainability 2", function() {
+    expect(2);
+    
+    var markup = jQuery("<div data-id='4698'></div><p></p><a></a>");
+    markup.lazygist();
+    var result = markup.lazygist('reset_write');
+    
+    ok(result.jquery !== undefined, "after reset, resulting object should be jQuery set");
+    equal(result.length, 3, "result should have 3 elements");
+    
+    markup.remove();
+    start();
+});
+
 asyncTest("attribute reading", function() {
     expect(2);
     

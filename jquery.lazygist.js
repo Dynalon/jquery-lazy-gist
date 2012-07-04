@@ -108,6 +108,8 @@
          */
         reset_write: function() {
             document.write = originwrite;
+            
+            return this;
         }
 	};
     
