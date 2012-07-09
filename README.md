@@ -35,9 +35,9 @@ If you want to reset the document.write function. Call 'reset_write':
 Pass an object to the lazygist function to configure. These are the defaults:
 
     lazygist({
-        'url_template' : 'https://gist.github.com/{id}.js?file={file}',
-        'id' : 'data-id',
-        'file' : 'data-file'
+        'url_template': 'https://gist.github.com/{id}.js?file={file}',
+        'id': 'data-id',
+        'file': 'data-file'
     });
 
 ###url_template###
@@ -61,6 +61,14 @@ Set the attribute name of the anchor-element for the filename. The content of th
 ## License
 
 Licensed under the MIT (see MIT.txt).
+
+## Tested against
+
+  - Chrome 20.0
+  - Firefox 13.0., 12.0
+  - Internet Explorer 9,8,7
+  - Safari 5.1
+  - Opera 9.8
 
 ## PS
 
