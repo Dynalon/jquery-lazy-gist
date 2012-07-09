@@ -33,33 +33,33 @@
         'file': 'data-file'
     },
     
-	options,
-	
-	// will be replaced
-	originwrite = document.write,
-	
-	// stylesheet urls found in document.write calls
-	// they are cached to write them once to the document,
-	// not three times for three gists
-	stylesheets = [],
+    options,
+    
+    // will be replaced
+    originwrite = document.write,
+    
+    // stylesheet urls found in document.write calls
+    // they are cached to write them once to the document,
+    // not three times for three gists
+    stylesheets = [],
     
     // cache gist-ids to know which are already appended to the dom
     ids_dom = [],
-	
+    
     // remember gist-ids if their javascript is already loaded
     ids_ajax = [],
     
-	methods = {
-		
-		/**
-		 * Standard init function
-		 * No magic here
-		 */
-		init : function( options_input ){
-		
-			// default options are default
-			options = $.extend({}, defaults, options_input);
-		
+    methods = {
+        
+        /**
+         * Standard init function
+         * No magic here
+         */
+        init : function( options_input ){
+        
+            // default options are default
+            options = $.extend({}, defaults, options_input);
+        
             // can be reset
             document.write = _write;
             
@@ -69,25 +69,25 @@
                 }
             });
             
-			return this.lazygist('load');
-		},
-		
-		/**
-		 * Load the gists
-		 */
-		load : function() {
-			// (1) iterate over gist anchors
-			// (2) append the gist-html through the new document.write func (see _write)
+            return this.lazygist('load');
+        },
+        
+        /**
+         * Load the gists
+         */
+        load : function() {
+            // (1) iterate over gist anchors
+            // (2) append the gist-html through the new document.write func (see _write)
             
             // (1)
-			return this.filter('[' + options.id + ']').each(function(){
-				
-				var id = $(this).attr(options.id),
+            return this.filter('[' + options.id + ']').each(function(){
+                
+                var id = $(this).attr(options.id),
                     file = $(this).attr(options.file),
                     src;
                 
-				if( id !== undefined ) {
-					
+                if( id !== undefined ) {
+                    
                     if( $.inArray(id, ids_ajax) !== -1 ) {
                         // just do nothin, if gist is already ajaxed
                         return;
@@ -95,13 +95,13 @@
                     
                     ids_ajax.push(id);
                     
-					src = options.url_template.replace(/\{id\}/g, id).replace(/\{file\}/g, file);
-					
-					// (2) this will trigger our _write function
-					$.getScript(src);
-				}
-			});
-		},
+                    src = options.url_template.replace(/\{id\}/g, id).replace(/\{file\}/g, file);
+                    
+                    // (2) this will trigger our _write function
+                    $.getScript(src);
+                }
+            });
+        },
         
         /**
          * Just reset the write function
@@ -111,7 +111,7 @@
             
             return this;
         }
-	};
+    };
     
     /**
      * private special document.write function
@@ -164,19 +164,19 @@
         }
     }
     
-	// method invocation - from jQuery.com
-	$.fn[pluginName] = function( method ) {
-	
-		if ( methods[method] ) {
-			return methods[ method ].apply( this, Array.prototype.slice.call( arguments, 1 ));
-		
-		} else if ( typeof method === 'object' || ! method ) {
-			return methods.init.apply( this, arguments );
-		
-		} else {
-			$.error( 'Method ' +  method + ' does not exist on jQuery.lazygist' );
-		}    
-	};
+    // method invocation - from jQuery.com
+    $.fn[pluginName] = function( method ) {
+    
+        if ( methods[method] ) {
+            return methods[ method ].apply( this, Array.prototype.slice.call( arguments, 1 ));
+        
+        } else if ( typeof method === 'object' || ! method ) {
+            return methods.init.apply( this, arguments );
+        
+        } else {
+            $.error( 'Method ' +  method + ' does not exist on jQuery.lazygist' );
+        }    
+    };
     
     // expose version for your interest
     $.fn[pluginName].version = version;
