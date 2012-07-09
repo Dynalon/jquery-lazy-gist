@@ -2,7 +2,7 @@
     "name": "lazygist",
     "title": "jQuery.Lazygist()",
     "description": "A jQuery plugin that will lazy load your gists.",
-    "version": "0.1-beta",
+    "version": "0.1",
     "author": {
         "name": "Tammo Pape",
         "url": "http://tammopape.de"

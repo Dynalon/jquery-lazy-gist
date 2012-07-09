@@ -1,5 +1,5 @@
 /**
- * Lazygist v0.1-beta
+ * Lazygist v0.1
  *
  * a jQuery plugin that will lazy load your gists.
  *
@@ -22,7 +22,7 @@
     //
 
     var pluginName = "lazygist",
-    version = "0.1-beta",
+    version = "0.1",
     
     defaults = {
         // adding the ?file parameter to choose a file
