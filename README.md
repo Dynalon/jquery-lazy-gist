@@ -51,12 +51,12 @@ If the {file} tag is ommited, github will set it anyway.
 ###id###
   - _String_
 
-Here we set the attribute name of the anchor-element. The content of the attribute will replace the {id} in the _url_template_.
+Here we set the attribute name of the gist-element. The content of the attribute will replace the {id} in the _url_template_.
 
 ###file###
   - _String_
 
-Set the attribute name of the anchor-element for the filename. The content of the attribute will replace the {file} in the _url_template_. Here you can specify which file of the gist (if there are two ore more) to show. This is a feature from the github api.
+Set the attribute name of the gist-element for the filename. The content of the attribute will replace the {file} in the _url_template_. Here you can specify which file of the gist (if there are two ore more) to show. This is a feature from the github api.
 
 ## License
 
@@ -72,4 +72,4 @@ Licensed under the MIT (see MIT.txt).
 
 ## PS
 
-Please provide feedback or create issues!
+Please provide feedback or create issues (if there are any)!
