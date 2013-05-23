@@ -132,8 +132,7 @@
             id; // from the content
         
         if( content.indexOf( 'rel="stylesheet"' ) !== -1 ) {
-            expression = /(github\.com[a-z\/]*\.css)/g.exec(content);
-            href = expression[1];
+            href = $(content).attr('href');
             
             // check if stylesheet is already inserted
             if ( $.inArray(href, stylesheets) === -1 ) {
@@ -143,7 +142,7 @@
             }
             
         } else if( content.indexOf( 'id="gist' ) !== -1 ) {
-            expression = /gist-([\d]{1,})/g.exec(content);
+            expression = /gist([\d]{1,})/g.exec(content);
             id = expression[1];
             
             if( id !== undefined ) {
